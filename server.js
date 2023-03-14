@@ -8,7 +8,8 @@ import userRouter from "./routes/userRoutes.js";
 import orderRouter from "./routes/orderRoutes.js";
 import uploadRouter from "./routes/uploadRoutes.js";
 import listRoutes from "express-list-routes"
-dotenv.config({ path : "./config/.env"});
+//dotenv.config({ path : "./config/.env"});
+dotenv.config()
 import cors from "cors"
 
 
