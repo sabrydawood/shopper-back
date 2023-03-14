@@ -122,8 +122,8 @@ let transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-      user: "postmaster@sandboxd80225f7cef4408cab375f8cf2f585b8.mailgun.org",
-      pass: "1803a385349ff4e5e423717f9e59db99-b36d2969-149a38d9", 
+      user: process.env.MAILGUN_SMTP_USER,
+      pass: process.env.MAILGUN_SMTP_PASS, 
     },
   });
 let info = await transporter.sendMail({
